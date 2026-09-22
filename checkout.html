@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>تأكيد الطلب</title>
+
+<style>
+body{
+direction:rtl;
+font-family:Arial;
+background:#eef2f3;
+}
+
+.order-box{
+width:330px;
+margin:60px auto;
+background:white;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+.icon{
+font-size:40px;
+margin-bottom:10px;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:8px 0;
+}
+
+.summary{
+margin:15px 0;
+font-weight:bold;
+}
+
+button{
+width:95%;
+padding:12px;
+background:#ff6b35;
+color:white;
+border:none;
+border-radius:8px;
+}
+</style>
+
+<script>
+window.onload=function(){
+
+let total=localStorage.getItem("orderTotal");
+
+document.getElementById("total").innerHTML=
+"الإجمالي: " + "500 جنيه";
+
+}
+</script>
+
+</head>
+<body>
+
+<div class="order-box">
+
+<h2>تأكيد الطلب 🛒</h2>
+
+<input type="text" placeholder="اسم العميل">
+
+<input type="tel" placeholder="رقم الهاتف">
+
+<input type="text" placeholder="العنوان">
+
+<div class="summary" id="total">
+الإجمالي:
+</div>
+
+<button><a href="success.html" class="btn-confirm">تاكيد الطلب✔️</a>
+
+</button>
+<a href="cart.html" style="text-decoration: none;"> <button type="button" style="background-color:
+ #6c757d; color: white; padding: 10px 20px; 
+border: none; border-radius: 5px; cursor: pointer;"> العودة للسلة</button></a>
+
+</div>
+
+</body>
+</html>

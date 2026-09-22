@@ -1,0 +1,85 @@
+body{
+
+margin:0;
+
+padding:0;
+
+font-family:Arial;
+
+background:url(login.jpeg);
+
+background-size: cover;
+background-position: center;height: 100vh;margin: 0;
+background-attachment: fixed;
+direction: rtl;
+
+text-align: right;
+
+}
+
+.login-box{
+
+width:350px;
+
+padding:40px;
+
+background:rgba(0,0,0,0.7);
+
+color:white;
+
+position:absolute;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+border-radius:10px;
+
+}
+
+.login-box h2{
+
+text-align:center;
+
+margin-bottom:20px;
+
+}
+.login-box input{
+
+width:100%;
+
+padding:10px;
+
+margin:10px 0;
+
+border:none;
+
+border-bottom:1px solid white;
+
+background:transparent;
+
+color:white;
+
+
+}
+
+input[type="submit"]{
+
+background-color: orange;
+
+color:white;
+
+border-radius:5px;
+
+cursor:pointer;
+
+}
+
+.login-box a{
+
+color:white;
+
+text-decoration:none;
+
+}
